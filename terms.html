@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Vely</title>
+    <meta name="description" content="Terms of Service for Vely - Couple Social Networking App">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7C3AED;
+            --primary-dark: #6D28D9;
+            --background: #0F0F1E;
+            --surface: #1A1A2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #9CA3AF;
+            --gold: #F59E0B;
+            --border: #374151;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .logo-text {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        .last-updated {
+            color: var(--gold);
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        section {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 12px;
+            color: var(--text-primary);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        
+        ul, ol {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-box {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+        
+        .warning-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid #EF4444;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning-box p {
+            margin: 0;
+            color: #FCA5A5;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        footer a {
+            color: var(--gold);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+        
+        .nav-links a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">V</div>
+            <span class="logo-text">vely</span>
+        </div>
+        <h1>Terms of Service</h1>
+        <p class="subtitle">Please read these terms carefully</p>
+        <p class="last-updated">Last Updated: December 25, 2025</p>
+    </header>
+    
+    <div class="container">
+        <main>
+            <!-- Acceptance of Terms -->
+            <section>
+                <h2>Acceptance of Terms</h2>
+                <p>Welcome to <strong>Vely</strong>. These Terms of Service ("Terms") govern your access to and use of the Vely mobile application ("App" or "Service") operated by MettaAi ("Company," "we," "us," or "our").</p>
+                <p>By downloading, installing, or using Vely, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Service.</p>
+                
+                <div class="highlight-box">
+                    <p>📱 By creating a Vely account, you confirm that you have read, understood, and agree to these Terms of Service and our <a href="index.html">Privacy Policy</a>.</p>
+                </div>
+            </section>
+            
+            <!-- Eligibility -->
+            <section>
+                <h2>Eligibility</h2>
+                <p>To use Vely, you must:</p>
+                <ul>
+                    <li>Be at least <strong>18 years of age</strong></li>
+                    <li>Be legally capable of entering into a binding contract</li>
+                    <li>Not be prohibited from using our services under applicable laws</li>
+                    <li>Not have been previously banned from Vely</li>
+                    <li>Not be required to register as a sex offender in any jurisdiction</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <p>⚠️ <strong>Important:</strong> Vely is strictly for adults 18+. Creating an account if you are under 18 is a violation of these Terms and may result in immediate account termination.</p>
+                </div>
+            </section>
+            
+            <!-- Account Registration -->
+            <section>
+                <h2>Account Registration</h2>
+                <p>When creating an account, you agree to:</p>
+                <ul>
+                    <li>Provide accurate, current, and complete information</li>
+                    <li>Maintain and update your information to keep it accurate</li>
+                    <li>Keep your login credentials secure and confidential</li>
+                    <li>Notify us immediately of any unauthorized access to your account</li>
+                    <li>Accept responsibility for all activities under your account</li>
+                </ul>
+                <p>You may only maintain one account. Creating multiple accounts may result in termination of all accounts.</p>
+            </section>
+            
+            <!-- Profile Requirements -->
+            <section>
+                <h2>Profile Requirements</h2>
+                <p>Your Vely profile must:</p>
+                <ul>
+                    <li>Contain your real photos (not photos of others, celebrities, or AI-generated images)</li>
+                    <li>Accurately represent yourself and/or your partner</li>
+                    <li>Not include false or misleading information</li>
+                    <li>Not contain commercial content or advertisements</li>
+                    <li>Comply with our Community Guidelines</li>
+                </ul>
+                
+                <h3>Photo Guidelines</h3>
+                <ul>
+                    <li>Photos must be of you and/or your partner</li>
+                    <li>No explicit, nude, or sexually suggestive images</li>
+                    <li>No photos containing minors</li>
+                    <li>No photos promoting violence, hate, or illegal activities</li>
+                    <li>No watermarked or copyrighted images you don't own</li>
+                </ul>
+            </section>
+            
+            <!-- Community Guidelines -->
+            <section>
+                <h2>Community Guidelines</h2>
+                <p>Vely is committed to maintaining a safe and respectful community. You agree NOT to:</p>
+                
+                <h3>Prohibited Conduct</h3>
+                <ul>
+                    <li>Harass, bully, stalk, or intimidate other users</li>
+                    <li>Send threatening, abusive, or hateful messages</li>
+                    <li>Post or share illegal, harmful, or obscene content</li>
+                    <li>Engage in discrimination based on race, ethnicity, religion, gender, sexual orientation, disability, or any protected characteristic</li>
+                    <li>Impersonate others or misrepresent your identity</li>
+                    <li>Spam, solicit, or promote commercial activities</li>
+                    <li>Attempt to scam or defraud other users</li>
+                    <li>Share private information of others without consent</li>
+                </ul>
+                
+                <h3>Safety First</h3>
+                <p>We encourage users to:</p>
+                <ul>
+                    <li>Report suspicious or inappropriate behavior</li>
+                    <li>Block users who make you uncomfortable</li>
+                    <li>Exercise caution when meeting in person</li>
+                    <li>Never share financial information with other users</li>
+                </ul>
+            </section>
+            
+            <!-- Premium Features & Payments -->
+            <section>
+                <h2>Premium Features & Payments</h2>
+                
+                <h3>Subscriptions</h3>
+                <p>Vely offers optional premium features through subscription plans. By subscribing:</p>
+                <ul>
+                    <li>You authorize recurring charges to your payment method</li>
+                    <li>Subscriptions auto-renew unless cancelled before the renewal date</li>
+                    <li>Prices may change; we will notify you of any price increases</li>
+                </ul>
+                
+                <h3>Cancellation</h3>
+                <ul>
+                    <li>You may cancel your subscription at any time through your app store (Google Play / App Store)</li>
+                    <li>Cancellation takes effect at the end of your current billing period</li>
+                    <li>No refunds for partial subscription periods</li>
+                </ul>
+                
+                <h3>Refund Policy</h3>
+                <p>Refund requests are handled by the respective app store (Google Play or Apple App Store) according to their policies. Contact them directly for refund inquiries.</p>
+            </section>
+            
+            <!-- Intellectual Property -->
+            <section>
+                <h2>Intellectual Property</h2>
+                
+                <h3>Our Rights</h3>
+                <p>The Vely app, including its design, features, logo, name, and content, is owned by MettaAi and protected by intellectual property laws. You may not:</p>
+                <ul>
+                    <li>Copy, modify, or distribute the app</li>
+                    <li>Reverse engineer or decompile the app</li>
+                    <li>Use our trademarks without permission</li>
+                    <li>Create derivative works based on our app</li>
+                </ul>
+                
+                <h3>Your Content</h3>
+                <p>You retain ownership of content you post (photos, bio, messages). By posting content, you grant Vely a non-exclusive, worldwide, royalty-free license to use, display, and distribute your content within the Service.</p>
+            </section>
+            
+            <!-- Termination -->
+            <section>
+                <h2>Termination</h2>
+                
+                <h3>By You</h3>
+                <p>You may delete your account at any time through the app settings or by contacting support. See our <a href="delete-account.html">Account Deletion</a> page for instructions.</p>
+                
+                <h3>By Us</h3>
+                <p>We reserve the right to suspend or terminate your account if:</p>
+                <ul>
+                    <li>You violate these Terms or Community Guidelines</li>
+                    <li>Your conduct harms other users or the platform</li>
+                    <li>We're required to do so by law</li>
+                    <li>We suspect fraudulent or illegal activity</li>
+                </ul>
+                <p>Account termination may be permanent. Terminated users may not create new accounts.</p>
+            </section>
+            
+            <!-- Disclaimers -->
+            <section>
+                <h2>Disclaimers</h2>
+                <p>Vely is provided "AS IS" without warranties of any kind. We disclaim all warranties, express or implied, including:</p>
+                <ul>
+                    <li>Merchantability and fitness for a particular purpose</li>
+                    <li>Non-infringement</li>
+                    <li>Accuracy or reliability of user content</li>
+                    <li>Uninterrupted or error-free operation</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <p>⚠️ <strong>User Responsibility:</strong> You interact with other users at your own risk. Vely is not responsible for the behavior of users on or off the platform. Exercise caution when meeting others.</p>
+                </div>
+            </section>
+            
+            <!-- Limitation of Liability -->
+            <section>
+                <h2>Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, Vely and its affiliates shall not be liable for:</p>
+                <ul>
+                    <li>Indirect, incidental, or consequential damages</li>
+                    <li>Loss of data, profits, or goodwill</li>
+                    <li>Damages arising from user interactions</li>
+                    <li>Actions of third parties on the platform</li>
+                </ul>
+                <p>Our total liability shall not exceed the amount you paid to Vely in the 12 months preceding the claim.</p>
+            </section>
+            
+            <!-- Indemnification -->
+            <section>
+                <h2>Indemnification</h2>
+                <p>You agree to indemnify and hold harmless Vely, its affiliates, officers, directors, and employees from any claims, damages, or expenses arising from:</p>
+                <ul>
+                    <li>Your use of the Service</li>
+                    <li>Your violation of these Terms</li>
+                    <li>Content you post or share</li>
+                    <li>Your interactions with other users</li>
+                </ul>
+            </section>
+            
+            <!-- Governing Law -->
+            <section>
+                <h2>Governing Law & Disputes</h2>
+                <p>These Terms are governed by the laws of India. Any disputes arising from these Terms or your use of Vely shall be resolved in the courts located in Pune, Maharashtra, India.</p>
+                <p>Before filing a legal claim, you agree to first contact us at <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a> and attempt to resolve the dispute informally within 30 days.</p>
+            </section>
+            
+            <!-- Changes to Terms -->
+            <section>
+                <h2>Changes to Terms</h2>
+                <p>We may modify these Terms at any time. We will notify users of material changes through:</p>
+                <ul>
+                    <li>Email notification</li>
+                    <li>In-app notification</li>
+                    <li>Updated "Last Updated" date on this page</li>
+                </ul>
+                <p>Continued use of Vely after changes take effect constitutes acceptance of the new Terms.</p>
+            </section>
+            
+            <!-- Contact -->
+            <section>
+                <h2>Contact Us</h2>
+                <p>For questions about these Terms of Service:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></li>
+                    <li><strong>Support:</strong> <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></li>
+                </ul>
+                <p style="margin-top: 20px;">
+                    <strong>MettaAi</strong><br>
+                    Pune, Maharashtra, India
+                </p>
+            </section>
+        </main>
+        
+        <div class="nav-links">
+            <a href="index.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="delete-account.html">Delete Account</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Vely. All rights reserved.</p>
+        <p style="margin-top: 10px;">Made with ❤️ for couples</p>
+    </footer>
+</body>
+</html>

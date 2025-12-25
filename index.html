@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Vely</title>
+    <meta name="description" content="Privacy Policy for Vely - Couple Social Networking App">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7C3AED;
+            --primary-dark: #6D28D9;
+            --background: #0F0F1E;
+            --surface: #1A1A2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #9CA3AF;
+            --gold: #F59E0B;
+            --border: #374151;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .logo-text {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        .last-updated {
+            color: var(--gold);
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        section {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 12px;
+            color: var(--text-primary);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        
+        ul, ol {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-box {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .data-table th {
+            background: rgba(124, 58, 237, 0.2);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            color: var(--text-secondary);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        footer a {
+            color: var(--gold);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+        
+        .nav-links a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .data-table {
+                font-size: 14px;
+            }
+            
+            .data-table th,
+            .data-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-text">Vely</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Your privacy matters to us</p>
+        <p class="last-updated">Last Updated: December 25, 2025</p>
+    </header>
+    
+    <div class="container">
+        <main>
+            <!-- Introduction -->
+            <section>
+                <h2>Introduction</h2>
+                <p>Welcome to <strong>Vely</strong> ("we," "our," or "us"). Vely is a couple-focused social networking application designed to help couples connect with other couples for friendships and social experiences.</p>
+                <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this policy carefully. By using Vely, you consent to the data practices described in this policy.</p>
+                
+                <div class="highlight-box">
+                    <p>🔒 <strong>Our Commitment:</strong> We are committed to protecting your privacy and ensuring a safe, trustworthy experience for all users. We never sell your personal data to third parties.</p>
+                </div>
+            </section>
+            
+            <!-- Information We Collect -->
+            <section>
+                <h2>Information We Collect</h2>
+                
+                <h3>1. Personal Information You Provide</h3>
+                <p>When you register and use Vely, you may provide us with:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, password</li>
+                    <li><strong>Profile Information:</strong> Names/nicknames, ages, gender identities, city/location, bio/description</li>
+                    <li><strong>Partner Information:</strong> Partner's nickname, age, gender (for couple profiles)</li>
+                    <li><strong>Relationship Details:</strong> Relationship status, years together, relationship type</li>
+                    <li><strong>Photos:</strong> Profile photos, verification photos</li>
+                    <li><strong>Preferences:</strong> Interests, lifestyle preferences, what you're looking for</li>
+                    <li><strong>Communications:</strong> Messages exchanged with other users</li>
+                </ul>
+                
+                <h3>2. Automatically Collected Information</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Device Information</td>
+                            <td>App optimization, security, troubleshooting</td>
+                        </tr>
+                        <tr>
+                            <td>Location Data (GPS)</td>
+                            <td>Show nearby profiles, distance-based matching</td>
+                        </tr>
+                        <tr>
+                            <td>Usage Analytics</td>
+                            <td>Improve app features and user experience</td>
+                        </tr>
+                        <tr>
+                            <td>Log Data</td>
+                            <td>Security, debugging, service improvement</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>3. Camera & Photo Access</h3>
+                <p>We request camera and photo library access to:</p>
+                <ul>
+                    <li>Upload profile photos</li>
+                    <li>Complete photo verification for account safety</li>
+                    <li>Share images in chat conversations</li>
+                </ul>
+            </section>
+            
+            <!-- How We Use Your Information -->
+            <section>
+                <h2>How We Use Your Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li><strong>Provide Our Services:</strong> Create and manage your account, display your profile to other users</li>
+                    <li><strong>Enable Matching:</strong> Show you relevant profiles based on location, preferences, and interests</li>
+                    <li><strong>Facilitate Communication:</strong> Enable messaging between matched users</li>
+                    <li><strong>Ensure Safety:</strong> Photo verification, prevent fraud, enforce community guidelines</li>
+                    <li><strong>Improve Our Services:</strong> Analyze usage patterns, fix bugs, develop new features</li>
+                    <li><strong>Process Payments:</strong> Handle subscription and premium feature purchases securely</li>
+                    <li><strong>Send Notifications:</strong> Matches, messages, and important account updates</li>
+                    <li><strong>Comply with Law:</strong> Respond to legal requests and prevent harm</li>
+                </ul>
+            </section>
+            
+            <!-- Data Sharing -->
+            <section>
+                <h2>How We Share Your Information</h2>
+                
+                <h3>With Other Users</h3>
+                <p>Your profile information (name, age, photos, bio, interests) is visible to other Vely users based on your preferences and matching criteria.</p>
+                
+                <h3>With Service Providers</h3>
+                <p>We work with trusted third-party services for:</p>
+                <ul>
+                    <li><strong>Supabase:</strong> Secure database and file storage</li>
+                    <li><strong>Payment Processors:</strong> Stripe and Razorpay for secure payment processing</li>
+                    <li><strong>Cloud Services:</strong> Infrastructure and hosting</li>
+                    <li><strong>Analytics:</strong> Understanding app usage (anonymized data)</li>
+                </ul>
+                
+                <h3>Legal Requirements</h3>
+                <p>We may disclose information when required by law, court order, or to protect the rights, safety, and security of Vely, our users, or the public.</p>
+                
+                <div class="highlight-box">
+                    <p>❌ <strong>We Never:</strong> Sell your personal information to advertisers or third parties for marketing purposes.</p>
+                </div>
+            </section>
+            
+            <!-- Data Security -->
+            <section>
+                <h2>Data Security</h2>
+                <p>We implement industry-standard security measures to protect your data:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> All data transmitted using TLS/SSL encryption</li>
+                    <li><strong>Secure Storage:</strong> Data stored in encrypted databases</li>
+                    <li><strong>Authentication:</strong> JWT-based secure authentication</li>
+                    <li><strong>Access Controls:</strong> Limited access to personal data</li>
+                    <li><strong>Regular Audits:</strong> Security assessments and updates</li>
+                </ul>
+                <p>While we strive to protect your information, no method of transmission over the Internet is 100% secure. Please use strong passwords and keep your login credentials confidential.</p>
+            </section>
+            
+            <!-- Your Rights -->
+            <section>
+                <h2>Your Rights & Choices</h2>
+                <p>You have the following rights regarding your personal data:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of your personal data</li>
+                    <li><strong>Correction:</strong> Update or correct inaccurate information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+                    <li><strong>Portability:</strong> Request your data in a portable format</li>
+                    <li><strong>Opt-Out:</strong> Manage notification preferences</li>
+                    <li><strong>Location:</strong> Disable location access in device settings</li>
+                    <li><strong>Block Users:</strong> Block and report inappropriate users</li>
+                </ul>
+                <p>To exercise these rights, contact us at <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></p>
+            </section>
+            
+            <!-- Data Retention -->
+            <section>
+                <h2>Data Retention</h2>
+                <p>We retain your personal information for as long as your account is active or as needed to provide you services. When you delete your account:</p>
+                <ul>
+                    <li>Profile data is deleted within 30 days</li>
+                    <li>Photos are removed from storage within 30 days</li>
+                    <li>Message history is anonymized</li>
+                    <li>Some data may be retained for legal compliance (up to 90 days)</li>
+                </ul>
+            </section>
+            
+            <!-- Age Restrictions -->
+            <section>
+                <h2>Age Restrictions</h2>
+                <p><strong>Vely is intended for users 18 years of age and older.</strong></p>
+                <p>We do not knowingly collect personal information from anyone under 18. If we discover that a user is under 18, we will immediately delete their account and associated data.</p>
+                <p>If you believe a minor is using our service, please report it to <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></p>
+            </section>
+            
+            <!-- International Users -->
+            <section>
+                <h2>International Users</h2>
+                <p>Vely operates from India. If you access our services from outside India, please be aware that your information may be transferred to, stored, and processed in India or other countries where our service providers operate.</p>
+                <p>By using Vely, you consent to the transfer of your information to these countries, which may have different data protection laws than your country of residence.</p>
+            </section>
+            
+            <!-- Changes to Policy -->
+            <section>
+                <h2>Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting the new policy on this page</li>
+                    <li>Updating the "Last Updated" date</li>
+                    <li>Sending an in-app notification for significant changes</li>
+                </ul>
+                <p>We encourage you to review this policy periodically.</p>
+            </section>
+            
+            <!-- Contact Us -->
+            <section>
+                <h2>Contact Us</h2>
+                <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></li>
+                    <li><strong>Support:</strong> <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></li>
+                    <li><strong>Safety Concerns:</strong> <a href="mailto:vely.adm1@gmail.com">vely.adm1@gmail.com</a></li>
+                </ul>
+                <p style="margin-top: 20px;">
+                    <strong>Vely</strong><br>
+                    Operated by MettaAi<br>
+                    Pune, Maharashtra, India
+                </p>
+            </section>
+        </main>
+        
+        <div class="nav-links">
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+            <a href="delete-account.html">Delete Account</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Vely. All rights reserved.</p>
+    </footer>
+</body>
+</html>

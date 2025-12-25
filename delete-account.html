@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Vely</title>
+    <meta name="description" content="Instructions for deleting your Vely account and data">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7C3AED;
+            --primary-dark: #6D28D9;
+            --background: #0F0F1E;
+            --surface: #1A1A2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #9CA3AF;
+            --gold: #F59E0B;
+            --border: #374151;
+            --danger: #EF4444;
+            --danger-bg: rgba(239, 68, 68, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .logo-text {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        section {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 12px;
+            color: var(--text-primary);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        
+        ul, ol {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .warning-box {
+            background: var(--danger-bg);
+            border: 1px solid var(--danger);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning-box p {
+            margin: 0;
+            color: #FCA5A5;
+        }
+        
+        .info-box {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .info-box p {
+            margin: 0;
+            color: var(--text-primary);
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-weight: 600;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .step:last-child {
+            border-bottom: none;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        
+        .step-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .delete-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--danger);
+            color: white;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 16px;
+            transition: background 0.2s;
+        }
+        
+        .delete-btn:hover {
+            background: #DC2626;
+            text-decoration: none;
+        }
+        
+        .data-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .data-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .data-item .icon {
+            font-size: 18px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        
+        footer a {
+            color: var(--gold);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+        
+        .nav-links a:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .data-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">V</div>
+            <span class="logo-text">vely</span>
+        </div>
+        <h1>Delete Your Account</h1>
+        <p class="subtitle">We're sorry to see you go</p>
+    </header>
+    
+    <div class="container">
+        <main>
+            <!-- Before You Delete -->
+            <section>
+                <h2>Before You Delete</h2>
+                <p>We understand that Vely may not be the right fit for everyone. Before you proceed, here are some things to consider:</p>
+                
+                <div class="info-box">
+                    <p>💡 <strong>Having issues?</strong> Our support team can help! Contact us at <a href="mailto:support@vely.app">support@vely.app</a> before deleting your account.</p>
+                </div>
+                
+                <h3>Alternatives to Deletion</h3>
+                <ul>
+                    <li><strong>Take a break:</strong> You can disable your profile temporarily without losing your data</li>
+                    <li><strong>Adjust settings:</strong> Update your preferences or notification settings</li>
+                    <li><strong>Block users:</strong> If someone is bothering you, block them instead</li>
+                    <li><strong>Cancel subscription:</strong> You can stop paying without deleting your account</li>
+                </ul>
+            </section>
+            
+            <!-- What Gets Deleted -->
+            <section>
+                <h2>What Gets Deleted</h2>
+                <p>When you delete your account, the following data will be permanently removed:</p>
+                
+                <div class="data-list">
+                    <div class="data-item">
+                        <span class="icon">👤</span>
+                        <span>Profile information</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="icon">📸</span>
+                        <span>All your photos</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="icon">💬</span>
+                        <span>Messages & conversations</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="icon">❤️</span>
+                        <span>Matches & likes</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="icon">⚙️</span>
+                        <span>Preferences & settings</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="icon">✅</span>
+                        <span>Verification status</span>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <p>⚠️ <strong>Warning:</strong> Account deletion is <strong>permanent and irreversible</strong>. You will not be able to recover your data, matches, or conversations after deletion.</p>
+                </div>
+            </section>
+            
+            <!-- Deletion Timeline -->
+            <section>
+                <h2>Deletion Timeline</h2>
+                <ul>
+                    <li><strong>Immediate:</strong> Your profile is hidden from other users</li>
+                    <li><strong>Within 24 hours:</strong> Login access is revoked</li>
+                    <li><strong>Within 30 days:</strong> All personal data is permanently deleted</li>
+                    <li><strong>Up to 90 days:</strong> Some data may be retained for legal/security purposes (anonymized)</li>
+                </ul>
+                <p><strong>Note:</strong> If you have an active subscription, it will NOT be automatically cancelled. Cancel your subscription through your app store before deleting your account to avoid future charges.</p>
+            </section>
+            
+            <!-- How to Delete - In App -->
+            <section>
+                <h2>How to Delete Your Account</h2>
+                
+                <h3>Method 1: Delete from the App</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <div class="step-title">Open Vely App</div>
+                        <p class="step-desc">Launch the Vely app on your device</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <div class="step-title">Go to Profile</div>
+                        <p class="step-desc">Tap on your profile icon in the bottom navigation</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <div class="step-title">Open Settings</div>
+                        <p class="step-desc">Tap the gear icon (⚙️) to open settings</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <div class="step-content">
+                        <div class="step-title">Select Delete Account</div>
+                        <p class="step-desc">Scroll down and tap "Delete Account"</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <div class="step-content">
+                        <div class="step-title">Confirm Deletion</div>
+                        <p class="step-desc">Enter your password and confirm to permanently delete your account</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Request by Email -->
+            <section>
+                <h2>Method 2: Request by Email</h2>
+                <p>If you're unable to access the app or prefer to request deletion via email:</p>
+                
+                <ol>
+                    <li>Send an email to <a href="mailto:privacy@vely.app">privacy@vely.app</a></li>
+                    <li>Use the subject line: <strong>"Account Deletion Request"</strong></li>
+                    <li>Include in the email body:
+                        <ul>
+                            <li>Your registered email address</li>
+                            <li>Your profile name/nickname</li>
+                            <li>Confirmation that you want to delete your account</li>
+                        </ul>
+                    </li>
+                    <li>We will verify your identity and process the request within 7 business days</li>
+                </ol>
+                
+                <a href="mailto:privacy@vely.app?subject=Account%20Deletion%20Request&body=I%20request%20deletion%20of%20my%20Vely%20account.%0A%0ARegistered%20Email%3A%20%0AProfile%20Name%3A%20%0A%0AI%20confirm%20that%20I%20want%20to%20permanently%20delete%20my%20account%20and%20all%20associated%20data." class="delete-btn">📧 Send Deletion Request</a>
+            </section>
+            
+            <!-- Subscription Cancellation -->
+            <section>
+                <h2>Cancel Your Subscription</h2>
+                <p><strong>Important:</strong> Deleting your account does NOT cancel your subscription. You must cancel separately:</p>
+                
+                <h3>Android (Google Play)</h3>
+                <ol>
+                    <li>Open the Google Play Store app</li>
+                    <li>Tap your profile icon</li>
+                    <li>Go to "Payments & subscriptions" → "Subscriptions"</li>
+                    <li>Find Vely and tap "Cancel subscription"</li>
+                </ol>
+                
+                <h3>iOS (App Store)</h3>
+                <ol>
+                    <li>Open Settings on your iPhone</li>
+                    <li>Tap your name at the top</li>
+                    <li>Go to "Subscriptions"</li>
+                    <li>Find Vely and tap "Cancel Subscription"</li>
+                </ol>
+            </section>
+            
+            <!-- Contact -->
+            <section>
+                <h2>Need Help?</h2>
+                <p>If you have questions about account deletion or need assistance:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:privacy@vely.app">privacy@vely.app</a></li>
+                    <li><strong>Support:</strong> <a href="mailto:support@vely.app">support@vely.app</a></li>
+                </ul>
+                <p>We aim to respond to all deletion requests within 48 hours.</p>
+            </section>
+        </main>
+        
+        <div class="nav-links">
+            <a href="index.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Vely. All rights reserved.</p>
+        <p style="margin-top: 10px;">Made with ❤️ for couples</p>
+    </footer>
+</body>
+</html>

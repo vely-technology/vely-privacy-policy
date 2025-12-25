@@ -1,0 +1,26 @@
+# Jekyll configuration for GitHub Pages
+# This file ensures proper behavior on GitHub Pages
+
+# Site settings
+title: Vely - Privacy & Legal
+description: Privacy Policy, Terms of Service, and Support for Vely - Couple Social Networking App
+url: "" # GitHub Pages will set this automatically
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+
+# Include files
+include:
+  - _headers
+
+# Theme (optional - we're using custom CSS)
+theme: null
