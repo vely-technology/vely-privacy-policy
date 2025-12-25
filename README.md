@@ -67,13 +67,8 @@ The pages use the Vely brand colors defined in CSS variables:
 --gold: #F59E0B;          /* Accent Gold */
 ```
 
-### Contact Emails
-Update these email addresses in all HTML files:
-- `support@vely.app` - General support
-- `privacy@vely.app` - Privacy concerns
-- `safety@vely.app` - Safety reports
-- `billing@vely.app` - Payment issues
-- `legal@vely.app` - Legal matters
+### Contact Email
+All inquiries use: `vely.adm1@gmail.com`
 
 ### Company Information
 Update the company name and address in the footer sections:
